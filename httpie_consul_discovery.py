@@ -14,7 +14,7 @@ class HttpieConsulDiscoveryPluginHttp(TransportPlugin):
 class HttpieConsulDiscoveryPluginHttps(TransportPlugin):
     name = "Consul discovery plugin"
 
-    prefix = "htts+consul://"
+    prefix = "https+consul://"
 
     def get_adapter(self):
         return ConsulDiscoveryAdapter("https://", consul_config.CONSUL_ADDRESSES)
